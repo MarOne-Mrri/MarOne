@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main>
+        <form action="" method="post" class="flex flex-col text-2xl">
+            <div class="flex flex-col mx-6 lg:mx-32">
+                <label class="py-4" for="name">Full Name</label>
+                <input
+                    class="rounded border-2 focus:outline-none focus:ring focus:border-blue-300 shadow-xl placeholder-blue-800"
+                    type="text" name="name" required placeholder="Your full Name" />
+            </div>
+            <div class="flex flex-col mx-6 lg:mx-32">
+                <label class="py-4" for="email">Email Address</label>
+                <input
+                    class="rounded border-2 focus:outline-none focus:ring focus:border-blue-300 shadow-xl placeholder-blue-800"
+                    type="email" name="email" required placeholder="Your Email Address" />
+            </div>
+            <div class="flex flex-col mx-6 lg:mx-32">
+                <label class="py-4" for="message">Message</label>
+                <textarea
+                    class="resize-none rounded border-2 focus:outline-none focus:ring focus:border-blue-300 shadow-xl placeholder-blue-800"
+                    name="message" placeholder="Your message" cols="30" rows="8"></textarea>
+            </div>
+            <div class="flex flex-row m-6 justify-center">
+                <button
+                    class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded border-2 focus:outline-none focus:ring focus:border-blue-300 shadow-xl bg-blue-800 p-4 mx-6"
+                    type="submit">Send</button>
+                <button
+                    class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded border-2 focus:outline-none focus:ring focus:border-blue-300 shadow-xl bg-blue-800 p-4 mx-6"
+                    type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarOne</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hide {
+            right: -75%;
+        }
+
+        .slowly {
+            transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+        }
+    </style>
+</head>
+
+<body class="font-mono">
+    <nav class="flex justify-between bg-blue-900 shadow-2xl">
+        <a href="#" class="p-4 text-white text-2xl font-black">MarOne</a>
+        <ul class=" list-none hidden md:block p-6">
+            <li class="hover:text-white inline-block">
+                <a href="#" class="pl-6">
+                    <i class='fas'>&#xf015;</i>&nbsp;Home
+                </a>
+            </li>
+            <li class="hover:text-white inline-block">
+                <a href="#" class="pl-6">
+                    <i class='fas'>&#xf7d9;</i>&nbsp;Tools
+                </a>
+            </li>
+            <li class="hover:text-white inline-block">
+                <a href="#" class="pl-6">
+                    <i class='fas'>&#xf121;</i>&nbsp;Portfolio
+                </a>
+            </li>
+            <li class="hover:text-white inline-block">
+                <a href="#" class="pl-6">
+                    <i class='fas'>&#xf658;</i>&nbsp;Contact
+                </a>
+            </li>
+        </ul>
+        <button type="button" class="p-6 md:hidden" id="hamburger">
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32"
+                width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+            </svg>
+        </button>
+    </nav>
+    <aside class="bg-blue-900 w-3/4 absolute inset-y-0 z-10 shadow-2xl hide slowly" id="sidebar">
+        <button type="button" class="text-3xl p-6 font-black" id="close">X</button>
+        <ul class="list-none">
+            <li class="pb-6">
+                <a href="test.html" class="pl-6">
+                    <i class='fas'>&#xf015;</i>&nbsp;Home
+                </a>
+            </li>
+            <li class="pb-6">
+                <a href="#" class="pl-6">
+                    <i class='fas'>&#xf7d9;</i>&nbsp;Tools
+                </a>
+            </li>
+            <li class="pb-6">
+                <a href="#" class="pl-6">
+                    <i class='fas'>&#xf121;</i>&nbsp;Portfolio
+                </a>
+            </li>
+            <li class="pb-6">
+                <a href="#" class="pl-6">
+                    <i class='fas'>&#xf658;</i>&nbsp;Contact
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <header></header>
+    <main></main>
+    <section class="flex md:flex-row flex-col">
+        <div class="flex-1 flex justify-center p-6 md:p-0">
+            <div class="flex items-center"><a href="#" class="text-3xl font-black">MarOne</a></div>
+        </div>
+        <div class="flex-1 flex justify-center py-4">
+            <ul>
+                <li class="pb-6">
+                    <a href="test.html" class="pl-6">
+                        <i class='fas'>&#xf015;</i>&nbsp;Home
+                    </a>
+                </li>
+                <li class="pb-6">
+                    <a href="#" class="pl-6">
+                        <i class='fas'>&#xf7d9;</i>&nbsp;Tools
+                    </a>
+                </li>
+                <li class="pb-6">
+                    <a href="#" class="pl-6">
+                        <i class='fas'>&#xf121;</i>&nbsp;Portfolio
+                    </a>
+                </li>
+                <li class="pb-6">
+                    <a href="#" class="pl-6">
+                        <i class='fas'>&#xf658;</i>&nbsp;Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <div class="flex items-center">
+                <h5 class="pr-6">follow me on</h5>
+                <ul>
+                    <li class="inline-block">
+                        <a href="#">
+                            <i class='fab'>&#xf09b;</i>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a href="#">
+                            <i class="fab">&#xf09a;</i>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a href="#">
+                            <i class="fab">&#xf16d;</i>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a href="#">
+                            <i class="fab">&#xf0e1;</i>
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a href="#">
+                            <i class="fab">&#xf099;</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-blue-900 p-6">
+        <p class="text-center text-white">
+            <i class="text-black">&copy;</i> Marouane Ourdou. All rights reserved, open sourced on
+            <a href="#" class="text-black">
+                <i class='fab'>&#xf09b;</i>
+            </a>
+            <br>
+            2021
+        </p>
+    </footer>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
