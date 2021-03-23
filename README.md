@@ -1,2 +1,0 @@
-# MarOne
-my own portfolio 
